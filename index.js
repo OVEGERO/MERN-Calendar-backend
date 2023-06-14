@@ -27,7 +27,7 @@ app.use(('/api/events'), require('./routes/events'))
 
 //ruta para otras URL
 app.get( '*' ,(req, res) => {
-    res.sendFile( path.resolve( __dirname, '/public/index.html' ) );
+    res.sendFile(  __dirname + '/public/index.html' );
 });
 
 //ESCUCHAR PETICIONES
